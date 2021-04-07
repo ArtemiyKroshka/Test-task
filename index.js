@@ -132,7 +132,7 @@ function uploadFile(file) {
                     //     },
                     //     body: JSON.stringify({resultArray: rowObject})
                     // })
-
+                    console.log(rowObject);
                     $.ajax({
                         url: 'http://193.243.158.230:4500/api/import',
                         type: "POST",
