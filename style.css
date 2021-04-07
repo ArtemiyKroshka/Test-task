@@ -1,0 +1,224 @@
+body{
+    width: 100%;
+    min-width: 1050px;
+}
+
+*:focus{
+    outline: 0;
+}
+
+i{
+    color:orange;
+    font-size: 21px
+}
+
+.fa-angle-down{
+    color:gray;
+}
+
+.loc-input{
+    border: none;
+    font-weight: 700;
+    font-size: 17px;
+    width: 200px;
+}
+
+.loc-before{
+    position: relative;
+}
+
+.loc-before::before{
+    content:'Место или название отела';
+    color: #757575;
+    font-size: 12px;
+    position: absolute;
+    top: -20px;
+    font-weight: 700;
+}
+
+
+.calendar{
+    padding-top: 5px;
+    position: relative;
+    border: none;
+    width: 100px;
+    font-weight: 700;
+}
+
+.before-arrive{
+    position: relative;
+}
+
+.before-depart{
+    position: relative;
+}
+
+.before-arrive::before{
+    content:'Заезд';
+    font-size: 13px;
+    color: #757575;
+    position: absolute;
+    top: -20px;
+    left: -27px;
+    font-weight: 700;
+}
+
+.before-depart::before{
+    content:'Выезд';
+    font-size: 13px;
+    color: #757575;
+    position: absolute;
+    top: -20px;
+    left: 25px;
+    font-weight: 700;
+}
+
+.line-right{
+    border-right: 2px solid #ccc; 
+}
+
+
+/* Section 3*/
+
+.inputChoose{
+    width: 25px;
+    border: 1px solid #757575;
+    text-align: center;
+    color:#757575;
+}
+
+.btn-top{
+    margin-left: 5px;
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid orange;           
+}
+
+.btn-down{
+    margin-left: 5px;
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid gray;
+}
+
+.number{
+    position: relative;
+}
+
+.number::before{
+    content:'Номера';
+    font-size: 13px;
+    color: #757575;
+    position: absolute;
+    top: -21px;
+    left: -2px;
+    font-weight: 700;
+}
+
+.old{
+    position: relative;
+}
+
+.old::before{
+    content:'Взрослые';
+    font-size: 13px;
+    color: #757575;
+    position: absolute;
+    top: -21px;
+    left: -2px;
+    font-weight: 700;
+}
+
+.child{
+    position: relative;
+}
+
+.child::before{
+    content:'Дети';
+    font-size: 13px;
+    color: #757575;
+    position: absolute;
+    top: -21px;
+    left: -2px;
+    font-weight: 700;
+}
+
+.btn-find{
+
+    border: 1px solid orange;
+    border-radius: 2px;
+    color:white;
+    background-color: orange;
+    padding: 15px 60px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Drag-and-Drop */
+
+.btnAdd{
+    background-color: orange;
+    color:white;
+    border-radius: 50%;
+    border:none;
+    font-size: 1rem;
+    height: 30px;
+    width: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.btnFile{
+    display: inline-block;
+    padding: 10px;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.btnFile:hover{
+    background: #ddd;
+}
+
+#drop-area {
+    display: none;
+    outline: 3px dashed #757575;
+    width: 700px;
+    height: 130px;
+    font-family: sans-serif;
+    margin: 100px auto;
+    padding: 20px;
+    padding-top: 30px;
+    color: #757575;
+    outline-offset: -10px;
+}
+
+.drop-area-static{
+    background-color: rgb(198, 251, 255);
+}
+
+.highlight {
+    background-color: rgb(183, 201, 235);
+}
+
+.uploaderText{
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.fileArea{
+    position: absolute;
+    height: 100px; 
+    width: 700px;
+    visibility: hidden;
+    top: 250px;
+}
